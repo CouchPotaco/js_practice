@@ -1,4 +1,4 @@
-//front06
+//front07
 let fruits = { apple:'りんご', strawberry:'いちご', grape:'ぶどう', lemon:'れもん' };
 
 //「キー」grapeの値を出力
