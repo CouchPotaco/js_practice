@@ -25,4 +25,4 @@ let b5 = a.filter((e)=> {
         false;
     }
 });
-console.log(b5); 
+console.log(b5);
