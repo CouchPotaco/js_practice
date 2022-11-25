@@ -144,27 +144,37 @@ ReactDOM.render(
     //     "カウント数：" + this.state.count
     //   );
     // }
-    render() {
-      if(this.state.count==0) {
-        return React.createElement(
-          "button",
-          { onClick:() => this.setState({ 
-            count : 15
-          })
-        },
-          "カウント数：" + this.state.count
-        );
+    // render() {
+    //   if(this.state.count==0) {
+    //     return React.createElement(
+    //       "button",
+    //       { onClick:() => this.setState({ 
+    //         count : 15
+    //       })
+    //     },
+    //       "カウント数：" + this.state.count
+    //     );
 
-      } else {
-        return React.createElement(
-          "button",
-          { onClick:() => this.setState({ 
-            count : this.state.count - 1
-          })
-        },
-          "カウント数：" + this.state.count
-        );
-      }      
+    //   } else {
+    //     return React.createElement(
+    //       "button",
+    //       { onClick:() => this.setState({ 
+    //         count : this.state.count - 1
+    //       })
+    //     },
+    //       "カウント数：" + this.state.count
+    //     );
+    //   }      
+    // }
+    render() {
+      return React.createElement(
+        "button",
+        { onClick:() => this.setState({ 
+          count : this.state.count == 0 ? 15 : this.state.count - 1
+        })
+      },
+        "カウント数：" + this.state.count
+      );
     }
   }
 // 表示される場所の要素とコンポーネントを結び付けて表示させる
